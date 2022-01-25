@@ -1,2 +1,1 @@
 # modrinth-info
-# modrinth-info
