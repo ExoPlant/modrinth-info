@@ -4,7 +4,7 @@ import sys
 import requests
 import json
 
-version_number = '0.1.0'
+version_number = '1.0.0'
 
 def runcmd(cmd, shell=False, check=False):
     return sp.run(cmd, shell=shell, check=check)
@@ -20,7 +20,8 @@ def main():
     main_layout = [
                   [sg.Text('Modrinth Info', font=font)],
                   [sg.Text('Project ID', font=font), sg.InputText()],
-                  [sg.Button('Find info', font=font), sg.Button('Cancel', font=font)] 
+                  [sg.Button('Find info', font=font), sg.Button('Cancel', font=font)],
+                  [sg.Text(f'modrinth-info v{version_number}', font=('Arial, 8'))]
                   ]
     
     main_window = sg.Window('Modrinth Info', main_layout)
